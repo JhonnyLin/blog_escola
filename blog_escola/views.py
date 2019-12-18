@@ -4,4 +4,10 @@ from django.http import HttpResponse
 
 def home(request):
     # os 3 parametros são requisição, pagina e um texto, que no caso é um dicionario
-    return render(request, 'home.html', {'usuario' : 'Lin'} )
+    return render(request, 'home.html')
+
+def contact(request):
+    return render(request, 'contato.html')
+
+def videos(request):
+    return render(request, 'videos.html')
