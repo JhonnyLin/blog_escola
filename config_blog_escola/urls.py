@@ -19,5 +19,7 @@ from blog_escola import views
 
 urlpatterns = [
     path('', views.home, name= 'home'),
+    path('contact/', views.contact, name= 'contato'),
+    path('aulas/', views.videos, name= 'aulas'),
     path('admin/', admin.site.urls),
 ]
